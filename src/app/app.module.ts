@@ -6,6 +6,8 @@ import { LoginComponent } from './layouts/login/login.component';
 import { HomeComponent } from './layouts/home/home.component';
 import { RegisterComponent } from './layouts/register/register.component';
 import {FormsModule} from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

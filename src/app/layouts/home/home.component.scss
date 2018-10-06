@@ -1,0 +1,24 @@
+.container-fluid {
+  width: 100%;
+  height: auto;
+  .container-nav {
+    border-bottom: solid 1px #e58d03;
+  }
+  .container-section-one {
+    padding: 1%;
+    text-align: center;
+    background-color: #343a40;
+    border-bottom: solid 1px #e58d03;
+  }
+  .container-section-two {
+    padding: 1%;
+    text-align: center;
+    background-color: #343a40;
+    .container {
+      width: 100%;
+      .row {
+        background-color: #4caf50;
+      }
+    }
+  }
+}

@@ -3,16 +3,25 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark clearfix">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Agriculture</a>
+          <a class="nav-link" [routerLink]="['/chart']">Agriculture</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/ng_progress']">ng_progress</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/chartng2']">ChartNg2</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/push_notification']">notification</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Plant</a>
+          <a class="nav-link" [routerLink]="['/register']">Plant</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Soil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Water</a>
+          <a class="nav-link" [routerLink]="['/dashboard']">dashboard</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Temperature</a>

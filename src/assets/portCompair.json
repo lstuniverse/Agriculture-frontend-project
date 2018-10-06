@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "position": "E",
+    "no": "1",
+    "rfid_code": "Change",
+    "description": "\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e44\u0e17\u0e22",
+    "count": "85",
+    "operation_name": "connect",
+    "con_id": "151",
+    "con_no": "7",
+    "con_desc": "Port W7"
+  },
+  {
+    "id": "2",
+    "position": "E",
+    "no": "2",
+    "rfid_code": "Change",
+    "description": "\ud55c\uad6d",
+    "count": "1",
+    "operation_name": "disable",
+    "con_id": "",
+    "con_no": "",
+    "con_desc": ""
+  }
+]

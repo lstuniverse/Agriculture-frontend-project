@@ -1,0 +1,10 @@
+<div class="container-fluid" *ngIf="this.port">
+  <div class="port">
+    <button class="btn btn-sm" *ngFor="let port of this.port"
+            [ngClass]="[checkOperation(port['id'])]" [matTooltip]="pushDescription(port['id'])"
+            matTooltipPosition="below"
+            (click)="checkPair(port['id'],port['position'])">
+      {{port['id']}}
+    </button>
+  </div>
+</div>

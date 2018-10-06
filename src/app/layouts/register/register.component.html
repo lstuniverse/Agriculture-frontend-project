@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <form>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="Model_user.username" #username="ngModel">
+      <div *ngIf="success">
+        <i class="fa fa-check"></i> Available</div>
+      <div *ngIf="failed">
+        <i class="fa fa-times"></i> username already exist</div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" [(ngModel)]="Model_user.password" #password="ngModel">
+    </div>
+    <div *ngFor="let user of users">
+      {{user.id}}
+      {{user.username}}
+      {{user.password}}
+      {{user.level}}
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="register()" disabled [attr.disabled]="validateRegisterBtn() === false ? true : null">Submit
+    </button>
+  </form>
+</div>
+

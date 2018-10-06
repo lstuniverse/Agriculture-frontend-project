@@ -18,8 +18,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    if (this.Model_user.username == 'admin' && this.Model_user.password == 'admin') {
-      localStorage.setItem('userData', JSON.stringify({'username': 'admin', 'level': 'admin'}));
+    if (this.Model_user.username === 'admin' && this.Model_user.password === 'admin') {
+      localStorage.setItem('userData', JSON.stringify({'username': 'admin', 'level': 'supervisor'}));
       this._route.navigate(['/home']);
       return true;
     } else {

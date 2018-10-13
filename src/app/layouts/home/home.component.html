@@ -12,7 +12,10 @@
           <a class="nav-link" [routerLink]="['/chartng2']">ChartNg2</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" [routerLink]="['/push_notification']">notification</a>
+          <a class="nav-link" [routerLink]="['/push_notification']">Notification</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/export']">Export</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/register']">Plant</a>
@@ -24,7 +27,7 @@
           <a class="nav-link" [routerLink]="['/dashboard']">dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Temperature</a>
+          <a class="nav-link" (click)="logout()">Logout</a>
         </li>
       </ul>
     </nav>

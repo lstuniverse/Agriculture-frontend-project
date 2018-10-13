@@ -1,6 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
+import { ProgressBarModule } from "angular-progress-bar";
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./layouts/login/login.component";
 import { HomeComponent } from "./layouts/home/home.component";
@@ -14,7 +14,7 @@ import { Md5GenerateComponent } from "./layouts/register/md5-generate/md5-genera
 import { DashboardComponent } from "./layouts/dashboard/dashboard.component";
 import { ButtonComponent } from "./layouts/button/button.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatTooltipModule } from "@angular/material";
+import { MatTooltipModule, MatProgressBarModule } from "@angular/material";
 import { PushNotiComponent } from "./layouts/push-noti/push-noti.component";
 import { environment } from "../environments/environment.prod";
 import { ChartNg2Component } from "./layouts/chart-ng2/chart-ng2.component";
@@ -23,6 +23,7 @@ import { ChartsModule } from "ng2-charts/ng2-charts";
 import "chart.piecelabel.js";
 import { NgCircleProgressComponent } from "./layouts/ng-circle-progress/ng-circle-progress.component";
 import { NgCircleProgressModule } from "ng-circle-progress";
+import { ExportProgressComponent } from "./layouts/export-progress/export-progress.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { NgCircleProgressModule } from "ng-circle-progress";
     ButtonComponent,
     PushNotiComponent,
     ChartNg2Component,
-    NgCircleProgressComponent
+    NgCircleProgressComponent,
+    ExportProgressComponent
   ],
   imports: [
     BrowserModule,
@@ -47,8 +49,9 @@ import { NgCircleProgressModule } from "ng-circle-progress";
     MatTooltipModule,
     ChartModule,
     ChartsModule,
-     // Specify ng-circle-progress as an import
-     NgCircleProgressModule.forRoot()
+    ProgressBarModule,
+    // Specify ng-circle-progress as an import
+    NgCircleProgressModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

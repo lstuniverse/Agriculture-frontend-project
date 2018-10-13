@@ -1,3 +1,4 @@
+import { ExportProgressComponent } from './layouts/export-progress/export-progress.component';
 import { ChartNg2Component } from "./layouts/chart-ng2/chart-ng2.component";
 import { DashboardComponent } from "./layouts/dashboard/dashboard.component";
 import { RouterModule } from "@angular/router";
@@ -22,6 +23,7 @@ const appRoutes = [
     canActivate: [AuthGuard]
   },
   { path: "register", component: RegisterComponent, canActivate: [AuthGuard] },
+  { path: "export", component: ExportProgressComponent, canActivate: [AuthGuard] },
   { path: "chart", component: ChartComponent, canActivate: [AuthGuard] },
   {
     path: "dashboard",

@@ -8,7 +8,6 @@ import { Router } from "@angular/router";
 })
 export class LoginComponent implements OnInit {
   Model_user: any = {};
-
   constructor(private _route: Router) {}
 
   ngOnInit() {}
@@ -22,7 +21,7 @@ export class LoginComponent implements OnInit {
         "userData",
         JSON.stringify({ username: "admin", level: "supervisor" })
       );
-      this._route.navigate(["/home"]);
+      this._route.navigate(["/dashboard"]);
       return true;
     } else {
       return false;

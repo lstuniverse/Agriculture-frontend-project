@@ -1,0 +1,14 @@
+.container-fluid {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    .container-nav {
+      border-bottom: solid 1px #e58d03;
+      .nav-link {
+        .logout{
+          float: right;
+        }
+      }
+    }
+  }
+  

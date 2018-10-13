@@ -1,0 +1,5 @@
+<div class="container-fluid">
+  <button *ngFor="let row_ports of this.port_objects" [id]="row_ports"  (click)="switch(row_ports.idx)" [ngClass]="[checkPort(row_ports.idx)]">
+    {{row_ports["idx"]}}
+  </button>
+</div>

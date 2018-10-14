@@ -1,3 +1,4 @@
+import { IframeResizerComponent } from "./layouts/iframe-resizer/iframe-resizer.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { ProgressBarModule } from "angular-progress-bar";
@@ -10,7 +11,6 @@ import { ChartComponent } from "./layouts/chart/chart.component";
 import { Http, HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
 import { routing } from "./app.routing";
-import { Md5GenerateComponent } from "./layouts/register/md5-generate/md5-generate.component";
 import { DashboardComponent } from "./layouts/dashboard/dashboard.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatTooltipModule } from "@angular/material";
@@ -22,6 +22,7 @@ import "chart.piecelabel.js";
 import { NgCircleProgressComponent } from "./layouts/ng-circle-progress/ng-circle-progress.component";
 import { NgCircleProgressModule } from "ng-circle-progress";
 import { BtnDesignComponent } from "./layouts/btn-design/btn-design.component";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,12 +30,12 @@ import { BtnDesignComponent } from "./layouts/btn-design/btn-design.component";
     HeaderComponent,
     RegisterComponent,
     ChartComponent,
-    Md5GenerateComponent,
     DashboardComponent,
     PushNotiComponent,
     ChartNg2Component,
     NgCircleProgressComponent,
-    BtnDesignComponent
+    BtnDesignComponent,
+    IframeResizerComponent
   ],
   imports: [
     BrowserModule,

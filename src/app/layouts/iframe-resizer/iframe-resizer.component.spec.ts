@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Md5GenerateComponent } from './md5-generate.component';
+import { IframeResizerComponent } from './iframe-resizer.component';
 
-describe('Md5GenerateComponent', () => {
-  let component: Md5GenerateComponent;
-  let fixture: ComponentFixture<Md5GenerateComponent>;
+describe('IframeResizerComponent', () => {
+  let component: IframeResizerComponent;
+  let fixture: ComponentFixture<IframeResizerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Md5GenerateComponent ]
+      declarations: [ IframeResizerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Md5GenerateComponent);
+    fixture = TestBed.createComponent(IframeResizerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

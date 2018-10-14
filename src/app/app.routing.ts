@@ -1,3 +1,4 @@
+import { IframeResizerComponent } from "./layouts/iframe-resizer/iframe-resizer.component";
 import { BtnDesignComponent } from "./layouts/btn-design/btn-design.component";
 import { ChartNg2Component } from "./layouts/chart-ng2/chart-ng2.component";
 import { DashboardComponent } from "./layouts/dashboard/dashboard.component";
@@ -8,13 +9,11 @@ import { HeaderComponent } from "./layouts/header/header.component";
 import { RegisterComponent } from "./layouts/register/register.component";
 import { ChartComponent } from "./layouts/chart/chart.component";
 import { AuthGuard } from "./@services/authGuard";
-import { Md5GenerateComponent } from "./layouts/register/md5-generate/md5-generate.component";
 import { PushNotiComponent } from "./layouts/push-noti/push-noti.component";
 import { NgCircleProgressComponent } from "./layouts/ng-circle-progress/ng-circle-progress.component";
 
 const appRoutes = [
   { path: "login", component: LoginComponent },
-  { path: "regiter_gen_password", component: Md5GenerateComponent },
   {
     path: "header",
     component: HeaderComponent,
@@ -41,6 +40,11 @@ const appRoutes = [
   {
     path: "btn_design",
     component: BtnDesignComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "iframe_resizer",
+    component: IframeResizerComponent,
     canActivate: [AuthGuard]
   },
 

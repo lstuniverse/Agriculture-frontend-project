@@ -1,3 +1,4 @@
+import { PushNotificationsService } from "./layouts/push-noti/pushNotificationsService";
 import { IframeResizerComponent } from "./layouts/iframe-resizer/iframe-resizer.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
@@ -51,7 +52,7 @@ import { BtnDesignComponent } from "./layouts/btn-design/btn-design.component";
     // Specify ng-circle-progress as an import
     NgCircleProgressModule.forRoot()
   ],
-  providers: [],
+  providers: [PushNotificationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

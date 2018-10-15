@@ -49,7 +49,7 @@ const appRoutes = [
   },
 
   // otherwise redirect to home
-  { path: "**", redirectTo: "home" }
+  { path: "**", redirectTo: "login" }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

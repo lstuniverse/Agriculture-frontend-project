@@ -1,19 +1,29 @@
 <div class="container-fluid">
-  <form class="form-register">
+  <input type="file" #coverFilesInput (change)="onChange($event)" class="file-input" /><br />
+
+  <ng-container *ngIf="uploadSuccess">
+    The image height is : {{height}} <br>
+    The image width is : {{width}} <br>
+  </ng-container>
+  <img class="img-body" *ngIf="this.imgs" [src]="this.imgs" alt="Preivew">
+  <!-- <input type='file' (change)="onFileChange($event)" placeholder="Upload image..." />
+  {{img_size}}
+  <img class="img-body" *ngIf="this.img" [src]="this.img" alt="Preivew"> -->
+  <!-- <form class="form-register">
     <div class="form-group">
       <label for="username" class="text">Username:</label>
-      <input type="text" class="form-control" id="username" name="username" [disabled]="check()" [(ngModel)]="Model_user.username"
+      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="Model_user.username"
         #username="ngModel">
     </div>
     <div class="form-group">
       <label for="email" class="text">Email:</label>
-      <input type="text" class="form-control" id="email" name="email" [disabled]="check()" [(ngModel)]="Model_user.email"
+      <input type="text" class="form-control" id="email" name="email" [(ngModel)]="Model_user.email"
         #email="ngModel">
     </div>
     <div class="form-group">
       <label for="password" class="text">Password:</label>
-      <input type="password" class="form-control" id="password" name="password" [disabled]="check()" [(ngModel)]="Model_user.password"
+      <input type="password" class="form-control" id="password" name="password" [(ngModel)]="Model_user.password"
         #password="ngModel">
     </div>
-  </form>
+  </form> -->
 </div>

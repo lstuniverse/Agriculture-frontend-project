@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { PushNotiComponent } from './push-noti.component';
+import { PushNotiComponent } from "./push-noti.component";
 
-describe('PushNotiComponent', () => {
+describe("PushNotiComponent", () => {
   let component: PushNotiComponent;
   let fixture: ComponentFixture<PushNotiComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PushNotiComponent ]
-    })
-    .compileComponents();
+      declarations: [PushNotiComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('PushNotiComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

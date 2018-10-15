@@ -1,11 +1,14 @@
 <div class="container-login">
     <form class="from-login">
-        <label class="label-name" for="username">First Name</label>
-        <input class="first-name-input" type="text" id="username" name="username" [(ngModel)]="Model_user.username" #username="ngModel"
-            placeholder="Your name..">
-        <label class="label-name" for="password">Last Name</label>
-        <input class="password-input" type="text" id="password" name="password" [(ngModel)]="Model_user.password" #password="ngModel"
-            placeholder="Your last name..">
+        <label class="label-name" for="username"><i class="fa fa-user-circle-o" aria-hidden="true"></i> First Name</label>
+        <input class="first-name-input" type="text" id="username" name="username" [(ngModel)]="Model_user.username"
+            #username="ngModel" placeholder="Your name..">
+        <label class="label-name" for="password"><i class="fa fa-key" aria-hidden="true"></i> Password</label>
+        <input class="password-input" type="text" id="password" name="password" [(ngModel)]="Model_user.password"
+            #password="ngModel" placeholder="Your Password..">
         <input type="submit" value="Submit" (click)="login()">
     </form>
+    <div class="footer">
+        <i class="fa fa-user-secret" aria-hidden="true"></i> privacy
+    </div>
 </div>
